@@ -27,12 +27,12 @@ const tagSlice = createSlice({
         })
         .addCase(fetchTags.fulfilled, (state, action) => {
             state.isLoading = false;
-            state.videos = action.payload;
+            state.tags = action.payload;
 
         })
         .addCase(fetchTags.rejected, (state, action) => {
             state.isLoading = false;
-            state.videos = [];
+            state.tags = [];
             state.isError = true;
             state.error = action.error?.message;
         })
