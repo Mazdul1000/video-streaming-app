@@ -16,7 +16,7 @@ export default Tag;
 
 
 {/* <div
-class="bg-blue-600 text-white px-4 py-1 rounded-full cursor-pointer"
+ className="bg-blue-600 text-white px-4 py-1 rounded-full cursor-pointer"
 >
 redux
 </div> */}

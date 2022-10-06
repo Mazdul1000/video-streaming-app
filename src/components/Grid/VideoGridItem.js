@@ -30,14 +30,14 @@ const VideoGridItem = ({video}) => {
           </Link>
 
           <div clas="flex flex-col">
-            <Link to="/videos/1">
+            <Link to={`/videos/${id}`}>
               <p className="text-slate-900 text-sm font-semibold">
                 {title}
               </p>
             </Link>
             <Link
               className="text-gray-400 text-xs mt-2 hover:text-gray-600"
-              to="/videos/1"
+              to={`/videos/${id}`}
             >
               {author}
             </Link>
