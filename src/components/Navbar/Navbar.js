@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Search from './Search';
+import searchIcon from '../../assets/search.svg';
 
 const Navbar = () => {
     return (
@@ -22,7 +23,7 @@ const Navbar = () => {
              <Search />
                 <img
                     className="inline h-4 cursor-pointer"
-                    src="./assets/search.svg"
+                    src={searchIcon}
                     alt="Search"
                 />
             </div>
