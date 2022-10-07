@@ -11,7 +11,6 @@ const Video = () => {
     const {id} = useParams();
     const dispatch = useDispatch()
     const {video, isLoading, isError, error} = useSelector((state) => state.video)
-    
     useEffect(()=>{
         dispatch(fetchVideo(id));
         console.log(video)
@@ -25,7 +24,7 @@ const Video = () => {
                     <Description video={video}/>
                 </div>
 
-                <RelatedVideoList video={video}/>
+                <RelatedVideoList currentVideoId={id} tags={video.tags}/>
                 
             </div>
         </div>
